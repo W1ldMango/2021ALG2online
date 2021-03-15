@@ -63,7 +63,7 @@ public class Point {
     //překrytí kódu metody zděděné z předka Object 
     @Override
     public String toString(){
-        return "x=" + x + ", y=" + y;
+        return String.format("[%.2f, %.2f]",x , y);
     }
     
     //getter
