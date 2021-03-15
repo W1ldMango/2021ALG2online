@@ -4,7 +4,7 @@ package point;
  * Library class - knihovní třída, sada statických metod
  * @author JV
  */
-public final class PointTools {
+public class PointTools {
     
     private PointTools(){
         
