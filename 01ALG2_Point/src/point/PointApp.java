@@ -30,12 +30,15 @@ public class PointApp {
         
         //vzdálenost mezi body A a B - vícero variant
         System.out.println("Vzdalenost mezi body");
+        
         //pomocí instanční metody
         System.out.println(a.calculateDistaceFrom(b));
         System.out.println(b.calculateDistaceFrom(a));
         //System.out.println(a.calculateDistaceBetween(a, b)); //kdyby nebyla static
+        
         //pomocí statické metody
         System.out.println(Point.calculateDistaceBetween(a, b));
+        
         //z knihovní třídy
         System.out.println(PointTools.calculateDistaceBetween(a, b));
     }

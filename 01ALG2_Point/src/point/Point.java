@@ -10,15 +10,15 @@ public class Point {
     private double x;
     private double y;
     
-    private double distance; //vypočítáva se jednou
+    private double distance; //vypočítáná, pro neměnný objekt se může počítat jenom jednou - v konstruktoru, nebo v metode get
     
-    //konstruktory
-    //prázdný konstruktor
+    //konstruktory - vytvoří objekt
+    //prázdný konstruktor - existuje automaticky pokud není definovaný jiný konstruktor
     public Point(){
-        this.x = 0.0;
-        this.y = 0.0;
-        //distance = calculateDistance();
-        distance = 0.0;
+        this(0.0, 0.0); //volání jiného konstruktoru může být jenom na prvním řádku
+        //this.x = 0.0;
+        //this.y = 0.0;
+        //distance = 0.0; 
     }
     
     //přetížený konstruktor, overloaded
@@ -49,7 +49,7 @@ public class Point {
         return Math.hypot(this.x - p.x, this.y - p.y);
     }
     
-    //metoda, která nepracuje s datami this, může být i v jiné tříďě
+    //statická metoda nepracuje s datami this, může být i v jiné tříďě
     public static double calculateDistaceBetween(Point a, Point b){
         return Math.hypot(a.x - b.x, a.y - b.y);
     }

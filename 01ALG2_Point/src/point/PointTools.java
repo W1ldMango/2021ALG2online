@@ -6,7 +6,7 @@ package point;
  */
 public final class PointTools {
     
-    private PointTools(){
+    private PointTools(){ //není možné vytvořit objekt
         
     }
     
