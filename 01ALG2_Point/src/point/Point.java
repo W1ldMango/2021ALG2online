@@ -45,11 +45,12 @@ public class Point {
      * @param p given point
      * @return distance 
      */
+    //instanční metoda, pracuje s instančími datami this.
     public double calculateDistaceFrom(Point p){
         return Math.hypot(this.x - p.x, this.y - p.y);
     }
     
-    //statická metoda nepracuje s datami this, může být i v jiné tříďě
+    //statická metoda, která nepracuje s instančními datami this, může být i v jiné tříďě
     public static double calculateDistaceBetween(Point a, Point b){
         return Math.hypot(a.x - b.x, a.y - b.y);
     }
